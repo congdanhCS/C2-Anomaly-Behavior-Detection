@@ -1,0 +1,29 @@
+{
+  "train": [
+    "benign_01",
+    "c2_http_01",
+    "c2_dns_01",
+    "ctu13_s1",
+    "ctu13_s2",
+    "ctu13_s3",
+    "ctu13_s4",
+    "ctu13_s6",
+    "ctu13_s8",
+    "ctu13_s9"
+  ],
+  "val": [
+    "benign_02",
+    "c2_tcp_01",
+    "ctu13_s5",
+    "ctu13_s7"
+  ],
+  "test": [
+    "benign_03",
+    "c2_https_01",
+    "c2_udp_01",
+    "mixed_01",
+    "ctu13_s11",
+    "ctu13_s12",
+    "ctu13_s13"
+  ]
+}

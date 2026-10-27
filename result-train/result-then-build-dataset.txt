@@ -1,0 +1,77 @@
+(venv) orca@sensor-pc:~/Desktop/thesis-pipeline$ python3 src/build_dataset.py
+scenario          nguon  loai       split  trang thai
+ctu13_s1          ctu13  irc_http_neristrain  OK
+ctu13_s2          ctu13  irc_http_neristrain  OK
+ctu13_s3          ctu13  irc_scan_rbottrain  OK
+ctu13_s4          ctu13  irc_ddos_rbottrain  OK
+ctu13_s5          ctu13  smtp_http_virutval    OK
+ctu13_s6          ctu13  p2p_menti  train  OK
+ctu13_s7          ctu13  http_sogou val    OK
+ctu13_s8          ctu13  p2p_murlo  train  OK
+ctu13_s9          ctu13  irc_http_neristrain  OK
+ctu13_s11         ctu13  irc_ddos_rbottest   OK
+ctu13_s12         ctu13  p2p_nsis   test   OK
+ctu13_s13         ctu13  http_virut test   OK
+benign_01         lab    benign     train  OK
+benign_02         lab    benign     val    OK
+benign_03         lab    benign     test   OK
+c2_dns_01         lab    dns        train  OK
+c2_http_01        lab    http       train  OK
+c2_https_01       lab    https      test   OK
+c2_tcp_01         lab    tcp        val    OK
+c2_udp_01         lab    udp        test   OK
+mixed_01          lab    http       test   OK
+[OK] benign_01: 844 flow, C2/Suspicious=0, dns=916 http=13 ssl=148
+[OK] c2_http_01: 563 flow, C2/Suspicious=61, dns=940 http=61 ssl=0
+[OK] c2_dns_01: 565 flow, C2/Suspicious=91, dns=983 http=0 ssl=0
+[OK] ctu13_s1: 31735 flow, C2/Suspicious=31735, dns=29942 http=1377 ssl=63
+[OK] ctu13_s2: 40198 flow, C2/Suspicious=40198, dns=848 http=4669 ssl=43
+[OK] ctu13_s3: 62936 flow, C2/Suspicious=62936, dns=280 http=9 ssl=0
+[OK] ctu13_s4: 191 flow, C2/Suspicious=191, dns=55 http=0 ssl=0
+[OK] ctu13_s6: 5327 flow, C2/Suspicious=5327, dns=37 http=1 ssl=0
+[OK] ctu13_s8: 9256 flow, C2/Suspicious=9256, dns=82 http=1148 ssl=0
+[OK] ctu13_s9: 137838 flow, C2/Suspicious=137838, dns=109005 http=17152 ssl=3086
+[OK] benign_02: 2927 flow, C2/Suspicious=0, dns=3035 http=75 ssl=877
+[OK] c2_tcp_01: 515 flow, C2/Suspicious=31, dns=896 http=0 ssl=0
+[OK] ctu13_s5: 1549 flow, C2/Suspicious=1549, dns=58 http=135 ssl=72
+[OK] ctu13_s7: 54 flow, C2/Suspicious=54, dns=21 http=88 ssl=0
+[OK] benign_03: 727 flow, C2/Suspicious=0, dns=1217 http=0 ssl=0
+[OK] c2_https_01: 516 flow, C2/Suspicious=40, dns=891 http=0 ssl=40
+[OK] c2_udp_01: 624 flow, C2/Suspicious=119, dns=960 http=0 ssl=0
+[OK] mixed_01: 999 flow, C2/Suspicious=60, dns=1765 http=60 ssl=0
+[OK] ctu13_s11: 126293 flow, C2/Suspicious=126293, dns=24 http=3 ssl=0
+[OK] ctu13_s12: 7517 flow, C2/Suspicious=7517, dns=269 http=844 ssl=0
+[OK] ctu13_s13: 88048 flow, C2/Suspicious=88048, dns=7613 http=2587 ssl=370
+
+=== Phan bo lop theo scenario ===
+split    scenario         c2_type  flows  benign     c2  c2_ratio
+train   benign_01          benign    844     844      0    0.0000
+train   c2_dns_01             dns    565     474     91    0.1611
+train  c2_http_01            http    563     502     61    0.1083
+train    ctu13_s1  irc_http_neris  31735       0  31735    1.0000
+train    ctu13_s2  irc_http_neris  40198       0  40198    1.0000
+train    ctu13_s3   irc_scan_rbot  62936       0  62936    1.0000
+train    ctu13_s4   irc_ddos_rbot    191       0    191    1.0000
+train    ctu13_s6       p2p_menti   5327       0   5327    1.0000
+train    ctu13_s8       p2p_murlo   9256       0   9256    1.0000
+train    ctu13_s9  irc_http_neris 137838       0 137838    1.0000
+  val   benign_02          benign   2927    2927      0    0.0000
+  val   c2_tcp_01             tcp    515     484     31    0.0602
+  val    ctu13_s5 smtp_http_virut   1549       0   1549    1.0000
+  val    ctu13_s7      http_sogou     54       0     54    1.0000
+ test   benign_03          benign    727     727      0    0.0000
+ test c2_https_01           https    516     476     40    0.0775
+ test   c2_udp_01             udp    624     505    119    0.1907
+ test   ctu13_s11   irc_ddos_rbot 126293       0 126293    1.0000
+ test   ctu13_s12        p2p_nsis   7517       0   7517    1.0000
+ test   ctu13_s13      http_virut  88048       0  88048    1.0000
+ test    mixed_01            http    999     939     60    0.0601
+
+=== Tong theo split ===
+        flows      c2  benign  c2_ratio
+split                                  
+train  289453  287633    1820    0.9937
+val      5045    1634    3411    0.3239
+test   224724  222077    2647    0.9882
+
+Da xuat Dataset v1 -> /home/orca/Desktop/thesis-pipeline/data/processed/dataset_v1

@@ -1,0 +1,18 @@
+(venv) orca@sensor-pc:~/Desktop/thesis-pipeline$ python3 src/crosscheck_ctu13.py
+Zeek: 61439 flow tcp/udp, 28835 IP khac nhau
+
+Phan bo nhan trong file .binetflow (toan bo):
+simple
+Background    4566929
+Botnet          26822
+Normal         116887
+
+Khop duoc 57812/61439 flow Zeek (94.1%) voi .binetflow
+
+Bang doi chieu (hang: nhan quy tac IP; cot: .binetflow co phai Botnet khong):
+binetflow_botnet     0      1
+zeek_ip_rule                 
+1                 2981  54831
+
+Ty le nhat quan tren flow khop: 94.84%
+2981 flow khong nhat quan (luu toi da 1000 dong vao /home/orca/Desktop/thesis-pipeline/reports/crosscheck_ctu13_mismatch.csv)

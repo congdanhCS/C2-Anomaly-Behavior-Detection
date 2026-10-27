@@ -1,0 +1,3 @@
+{"ts":1791966619.512025,"host":"192.168.10.132","software_type":"HTTP::BROWSER","name":"Firefox","version.major":140,"version.minor":0,"unparsed_version":"Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"}
+{"ts":1791966679.616301,"host":"192.168.10.132","software_type":"HTTP::BROWSER","name":"Python-urllib","version.major":3,"version.minor":14,"unparsed_version":"Python-urllib/3.14"}
+{"ts":1791968078.708697,"host":"192.168.10.12","software_type":"HTTP::BROWSER","name":"Firefox","version.major":140,"version.minor":0,"unparsed_version":"Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"}

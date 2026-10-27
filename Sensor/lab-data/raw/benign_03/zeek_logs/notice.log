@@ -1,0 +1,6 @@
+{"ts":1792487728.395146,"note":"CaptureLoss::Too_Little_Traffic","msg":"Only observed 0 TCP ACKs and was expecting at least 1.","actions":["Notice::ACTION_LOG"],"email_dest":[],"suppress_for":3600.0}
+{"ts":1792488629.132861,"note":"CaptureLoss::Too_Little_Traffic","msg":"Only observed 0 TCP ACKs and was expecting at least 1.","actions":["Notice::ACTION_LOG"],"email_dest":[],"suppress_for":3600.0}
+{"ts":1792489678.280927,"note":"CaptureLoss::Too_Little_Traffic","msg":"Only observed 0 TCP ACKs and was expecting at least 1.","actions":["Notice::ACTION_LOG"],"email_dest":[],"suppress_for":3600.0}
+{"ts":1792490580.795312,"note":"CaptureLoss::Too_Little_Traffic","msg":"Only observed 0 TCP ACKs and was expecting at least 1.","actions":["Notice::ACTION_LOG"],"email_dest":[],"suppress_for":3600.0}
+{"ts":1792492068.430028,"note":"CaptureLoss::Too_Little_Traffic","msg":"Only observed 0 TCP ACKs and was expecting at least 1.","actions":["Notice::ACTION_LOG"],"email_dest":[],"suppress_for":3600.0}
+{"ts":1792492573.062675,"note":"CaptureLoss::Too_Little_Traffic","msg":"Only observed 0 TCP ACKs and was expecting at least 1.","actions":["Notice::ACTION_LOG"],"email_dest":[],"suppress_for":3600.0}

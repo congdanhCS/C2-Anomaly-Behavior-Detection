@@ -1,0 +1,19 @@
+[16121 - Suricata-Main] 2026-10-22 03:40:59 Notice: suricata: This is Suricata version 8.0.7 RELEASE running in USER mode
+[16121 - Suricata-Main] 2026-10-22 03:40:59 Info: cpu: CPUs/cores online: 4
+[16121 - Suricata-Main] 2026-10-22 03:40:59 Info: suricata: Setting engine mode to IDS mode by default
+[16121 - Suricata-Main] 2026-10-22 03:40:59 Info: exception-policy: master exception-policy set to: auto
+[16121 - Suricata-Main] 2026-10-22 03:40:59 Info: suricata: Preparing unexpected signal handling
+[16121 - Suricata-Main] 2026-10-22 03:40:59 Info: logopenfile: fast output device (regular) initialized: fast.log
+[16121 - Suricata-Main] 2026-10-22 03:40:59 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[16121 - Suricata-Main] 2026-10-22 03:40:59 Info: logopenfile: stats output device (regular) initialized: stats.log
+[16121 - Suricata-Main] 2026-10-22 03:41:19 Info: detect: 1 rule files processed. 53039 rules successfully loaded, 0 rules failed, 0 rules skipped
+[16121 - Suricata-Main] 2026-10-22 03:41:19 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[16121 - Suricata-Main] 2026-10-22 03:41:19 Info: detect: 53044 signatures processed. 1239 are IP-only rules, 4538 are inspecting packet payload, 47031 inspect application layer, 110 are decoder event only
+[16123 - RX#01] 2026-10-22 03:41:21 Info: pcap: Starting file run for /home/orca/Desktop/lab-data/raw/20261022_030744_c2_https_01/capture.pcap
+[16123 - RX#01] 2026-10-22 03:41:21 Info: checksum: No packets with invalid checksum, assuming checksum offloading is NOT used
+[16121 - Suricata-Main] 2026-10-22 03:41:21 Notice: threads: Threads created -> RX: 1 W: 4 FM: 1 FR: 1   Engine started.
+[16123 - RX#01] 2026-10-22 03:41:21 Info: pcap: pcap file /home/orca/Desktop/lab-data/raw/20261022_030744_c2_https_01/capture.pcap end of file reached (pcap err code 0)
+[16121 - Suricata-Main] 2026-10-22 03:41:21 Notice: suricata: Signal Received.  Stopping engine.
+[16121 - Suricata-Main] 2026-10-22 03:41:21 Info: suricata: time elapsed 0.251s
+[16123 - RX#01] 2026-10-22 03:41:21 Notice: pcap: read 1 file, 1956 packets, 369800 bytes
+[16121 - Suricata-Main] 2026-10-22 03:41:21 Info: counters: Alerts: 0

@@ -1,0 +1,26 @@
+(venv) orca@sensor-pc:~/Desktop/thesis-pipeline$ python3 src/train_eval.py
+=== 0. RULE-BASED BASELINE ===
+  Nguong chon tren validation: periodicity_score>=0.5, dns_nx_ratio>=0.2 (F1_val=0.133)
+[Rule-based] P:0.879 R:0.037 F1:0.070 FPR:0.3464 PR-AUC:n/a ROC-AUC:n/a | TP2628 FP362 FN69243 TN683
+
+=== 1. RANDOM FOREST - ABLATION STUDY (A -> A+B+C+D) ===
+
+Cau hinh A | nguong=0.95 (F1_val=0.895) | do tre suy luan: 0.0041 ms/mau | tai nguyen huan luyen: {'cpu_pct': 0.0, 'ram_mb': 819.2}
+[RF-A] P:1.000 R:0.632 F1:0.774 FPR:0.0010 PR-AUC:1.000 ROC-AUC:0.983 | TP45407 FP1 FN26464 TN1044
+
+Cau hinh A+B | nguong=0.95 (F1_val=0.907) | do tre suy luan: 0.0040 ms/mau | tai nguyen huan luyen: {'cpu_pct': 0.0, 'ram_mb': 823.8}
+[RF-A+B] P:1.000 R:0.629 F1:0.772 FPR:0.0000 PR-AUC:1.000 ROC-AUC:0.990 | TP45193 FP0 FN26678 TN1045
+
+Cau hinh A+B+C | nguong=0.95 (F1_val=0.913) | do tre suy luan: 0.0052 ms/mau | tai nguyen huan luyen: {'cpu_pct': 0.0, 'ram_mb': 825.6}
+[RF-A+B+C] P:1.000 R:0.646 F1:0.785 FPR:0.0000 PR-AUC:1.000 ROC-AUC:0.990 | TP46437 FP0 FN25434 TN1045
+
+Cau hinh A+B+C+D | nguong=0.95 (F1_val=0.981) | do tre suy luan: 0.0048 ms/mau | tai nguyen huan luyen: {'cpu_pct': 0.0, 'ram_mb': 832.1}
+[RF-A+B+C+D] P:1.000 R:0.689 F1:0.816 FPR:0.0000 PR-AUC:1.000 ROC-AUC:0.993 | TP49538 FP0 FN22333 TN1045
+
+=== 2. ISOLATION FOREST (chi hoc tren luu luong benign) ===
+  contamination chon tren validation: 0.05 (F1_val=0.251)
+[Isolation Forest (A+B+C+D)] P:0.992 R:0.052 F1:0.099 FPR:0.0278 PR-AUC:0.988 ROC-AUC:0.533 | TP3743 FP29 FN68128 TN1016
+
+Dang luu mo hinh va ket qua...
+Hoan tat! Ket qua day du (Precision/Recall/F1/FPR/PR-AUC/ROC-AUC/latency/CPU-RAM) luu tai results/metrics.json
+Luu y: dung ket qua tren TEST de bao cao trong khoa luan; nguong/tham so da duoc chon rieng tren VALIDATION dung theo muc 1.6.

@@ -1,0 +1,5 @@
+{
+  "train": ["benign_01", "c2_http_01", "c2_dns_01", "ctu13_s3"],
+  "val":   ["benign_02", "c2_tcp_01"],
+  "test":  ["benign_03", "mixed_01", "c2_https_01", "c2_udp_01"]
+}

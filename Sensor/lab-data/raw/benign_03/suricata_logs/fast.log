@@ -1,0 +1,4 @@
+10/20/2026-16:24:38.232523  [**] [1:2022973:1] ET INFO Possible Kali Linux hostname in DHCP Request Packet [**] [Classification: Potential Corporate Privacy Violation] [Priority: 1] {UDP} 192.168.10.132:68 -> 192.168.10.254:67
+10/20/2026-16:51:23.759051  [**] [1:2022973:1] ET INFO Possible Kali Linux hostname in DHCP Request Packet [**] [Classification: Potential Corporate Privacy Violation] [Priority: 1] {UDP} 192.168.10.132:68 -> 192.168.10.254:67
+10/20/2026-16:54:38.150762  [**] [1:2022973:1] ET INFO Possible Kali Linux hostname in DHCP Request Packet [**] [Classification: Potential Corporate Privacy Violation] [Priority: 1] {UDP} 192.168.10.132:68 -> 192.168.10.254:67
+10/20/2026-17:09:38.226669  [**] [1:2022973:1] ET INFO Possible Kali Linux hostname in DHCP Request Packet [**] [Classification: Potential Corporate Privacy Violation] [Priority: 1] {UDP} 192.168.10.132:68 -> 192.168.10.254:67

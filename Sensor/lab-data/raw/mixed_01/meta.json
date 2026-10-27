@@ -1,0 +1,15 @@
+{
+  "scenario": "mixed_01",
+  "iface": "ens34",
+  "start": "2026-10-23T00:19:20+07:00",
+  "end": "2026-10-23T00:58:49.433950+07:00",
+  "label": "c2",
+  "mode": "http",
+  "interval": 30,
+  "jitter": 0.3,
+  "payload": 150,
+  "server_port": 8080,
+  "c2_ip": "192.168.10.13",
+  "bot_ip": "192.168.10.12",
+  "benign_running": true
+}

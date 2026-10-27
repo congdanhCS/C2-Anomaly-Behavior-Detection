@@ -1,0 +1,15 @@
+{
+  "scenario": "c2_https_01",
+  "iface": "ens34",
+  "start": "2026-10-22T03:07:44+07:00",
+  "end": "2026-10-22T03:40:58.427552+07:00",
+  "label": "c2",
+  "mode": "https",
+  "interval": 45,
+  "jitter": 0.2,
+  "payload": 200,
+  "server_port": 8443,
+  "c2_ip": "192.168.10.13",
+  "bot_ip": "192.168.10.12",
+  "benign_running": false
+}

@@ -1,0 +1,2 @@
+{"ts":1792689660.9031,"host":"192.168.10.12","software_type":"HTTP::BROWSER","name":"<unknown browser>","unparsed_version":"Mozilla/5.0 (X11; Linux x86_64) LabBeacon/1.0"}
+{"ts":1792689660.907655,"host":"192.168.10.13","host_p":8080,"software_type":"HTTP::SERVER","name":"LabC2","version.major":1,"version.minor":0,"version.addl":"Python/3","unparsed_version":"LabC2/1.0 Python/3.13.12"}
