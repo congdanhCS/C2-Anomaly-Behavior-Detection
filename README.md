@@ -1,5 +1,5 @@
-**🛡️ Hệ thống Phát hiện Lưu lượng Command-and-Control (C2) dựa trên Bất thường Hành vi Mạng (SME NSM)
-📁 1. Cấu trúc Thư mục Dự án
+Hệ thống Phát hiện Lưu lượng Command-and-Control (C2) dựa trên Bất thường Hành vi Mạng (SME NSM)
+📁1. Cấu trúc Thư mục Dự án
 Toàn bộ pipeline xử lý dữ liệu và mô hình được đặt trên máy **Sensor VM** (`192.168.10.10`, user `orca`):
 
 /home/orca/Desktop/
@@ -30,9 +30,13 @@ Toàn bộ pipeline xử lý dữ liệu và mô hình được đặt trên má
         └── dashboard.py            # Giao diện giám sát SOC (Streamlit)
         
 2. Yêu cầu Hệ thống & Cài đặt Môi trườngThực hiện
+cd => /thesis-pipeline
 python3 -m venv venv
 source venv/bin/activate
 
 Cài đặt các thư viện cần thiết
+pip install --upgrate pip
 pip install pandas numpy pyarrow scikit-learn tldextract fastapi uvicorn pydantic requests streamlit plotly psutil
 
+3. Chạy dashboard xem dữ liệu
+streamlit run src/dashboard.py --server.port 8501 --server.address 0.0.0.0
